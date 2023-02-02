@@ -4,8 +4,8 @@
   "description": "Our users should be able to come to our web app to add or remove cars that they want on their Wish List.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build":
+    "webpack"
   },
   "repository": {
     "type": "git",
@@ -22,4 +22,5 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   }
+
 }
