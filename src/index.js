@@ -1,4 +1,4 @@
-import { Wishlist } from "wishlist.js";
+import { Wishlist } from "./wishlist.js";
 document.getElementById("makeInput");
 document.getElementById("modelInput");
 document.getElementById("yearInput");
@@ -13,7 +13,7 @@ function showCarDetails(car) {
   car.make = undefined;
   car.model = undefined;
   car.year = undefined;
-    const btn =  document.getElementByClass("btn btn-warning removeBtn")
-btn.disabled = false;
-btn.setAttribute("data-carId", car.id);
+  const btn = document.getElementByClass("btn btn-warning removeBtn");
+  btn.disabled = false;
+  btn.setAttribute("data-carId", car.id);
 }

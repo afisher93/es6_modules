@@ -1,4 +1,4 @@
-import Car from "car.js";
+import Car from "./car.js";
 export class Wishlist {
   constructor(list, nextId) {
     this.list = [];
@@ -27,34 +27,14 @@ export class Wishlist {
       const newListItem = document.createElement("li");
       newListItem.textContent = `${this.list[i].make}hello`;
       wishlistcontainer.append(newListItem);
+      newListItem.addEventListener("click", () => showCarDetails(car));
     }
   }
-  li.addEventListener("click", () => showCarDetails(car));
   
-  function function1() {
+  function1() {
     var ul = document.getElementById("list");
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(""));
     ul.appendChild(li);
   }
-  function addCar(){
-
-  }
-       //turn array into ArrayList using asList() method
-       const arrList = new ArrayList( Arrays.asList(myArray));
-
-       // adding a new element to the array
-       arrList.add(car);
-
-       // Transforming the ArrayList into an array
-       myArray = arrList.toArray(myArray);
-       return myArray;
-
-        //array to arrayList
-    List&lt;Integer&gt;arrayList = IntStream.of(myArray) .boxed().collect(Collectors.toList()); 
-    // Remove the specified element 
-    arrayList.remove(index); 
- 
-    // return the resultant array 
-    returnarrayList.stream().mapToInt(Integer::intValue).toArray(); 
 }
