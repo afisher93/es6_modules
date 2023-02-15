@@ -1,3 +1,4 @@
+import Car from "./car.js";
 import { Wishlist } from "./wishlist.js";
 document.getElementById("makeInput");
 document.getElementById("modelInput");
